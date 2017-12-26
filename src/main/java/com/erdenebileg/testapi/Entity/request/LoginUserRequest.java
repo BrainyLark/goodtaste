@@ -1,9 +1,8 @@
 package com.erdenebileg.testapi.Entity.request;
 
-public class AddUserRequest {
+public class LoginUserRequest {
     private String uname;
     private String passwd;
-    private String email;
 
     public String getUname() {
         return uname;
@@ -19,13 +18,5 @@ public class AddUserRequest {
 
     public void setPasswd(String passwd) {
         this.passwd = passwd;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }

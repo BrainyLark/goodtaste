@@ -9,31 +9,31 @@ public class User {
 
     @Id
     @GeneratedValue
-    private long id;
-    private String name;
-    private String surname;
+    private String uname;
+    private String passwd;
+    private String email;
 
-    public long getId() {
-        return id;
+    public String getUname() {
+        return uname;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setUname(String uname) {
+        this.uname = uname;
     }
 
-    public String getName() {
-        return name;
+    public String getPasswd() {
+        return passwd;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getEmail() {
+        return email;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

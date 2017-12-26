@@ -1,5 +1,6 @@
 package com.erdenebileg.testapi.utils;
 
+import org.apache.mahout.cf.taste.common.NoSuchUserException;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.impl.neighborhood.ThresholdUserNeighborhood;
@@ -39,9 +40,9 @@ public class Recommender {
     public List<RecommendedItem> getRecommendedItems() {
         try {
             UserBasedRecommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity);
-            return recommender.recommend(userId, 20);
+            return recommender.recommend(userId, 100);
         } catch (TasteException e) {
-            e.printStackTrace();
+
         }
         return null;
     }
